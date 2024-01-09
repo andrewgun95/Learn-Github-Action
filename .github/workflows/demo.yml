@@ -20,5 +20,6 @@ jobs:
         env:
           USERNAME: Andreas
         run: |
-          export -p
+          export -p &&
+          echo ${{ env.TEST }}
       - run: echo "This job status is ${{ job.status }}"
